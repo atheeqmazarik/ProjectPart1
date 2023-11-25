@@ -10,7 +10,7 @@ module.exports.DislayShowList = async (req,res,next)=>{ //< Mark function as asy
     try{
        const tvList = await Show.find(); //< Use of await keyword
        res.render('tv/list', {
-          title: 'TV Show List', 
+          title: 'Course List', 
           tvList: tvList
        });
     }catch(err){
